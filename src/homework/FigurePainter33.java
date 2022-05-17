@@ -25,8 +25,8 @@ public class FigurePainter33 {
 
 
         }
-
         for (int i = 0; i < 4; i++) {
+
             for (int m = 0; m < i; m++) {
                 System.out.print(" ");
             }
@@ -37,7 +37,7 @@ public class FigurePainter33 {
             System.out.println();
 
 
-        }
+    }
     }
 
 
