@@ -19,22 +19,15 @@ public class ArrayUtil {
 
 
 //  max-ը մասիվի ամենամեծ թիվը
-        int max;
-        if (array[0] > array[1]) {
+        System.out.println();
+        int max = array[0];
 
-            max = array[0];
-        } else {
-            max = array[1];
+        for (int j = 1; j < array.length ; j++) {
 
-        }
-        for (int j = 2; j < array.length - 1; j++)
-
-            if (max > array[j]) {
-                max = max;
-            } else {
+            if (array[j] > max) {
                 max = array[j];
             }
-
+        }
         System.out.print("    մասիվի ամենամեծ թիվը" + max);
 //        min-ը մասիվի ամենափոքր թիվն է
         int min;
@@ -72,5 +65,17 @@ public class ArrayUtil {
             }
         }
         System.out.println("մասիվի կենտ էլեմենտների քանակը հավասար է" + countElement);
+
+
+        System.out.println("տպել զույգերի քանակը");
+        int countOfEvens = 0;
+        for (int m=0;m< array.length;m++){
+            if (array[m] % 2 ==0 && array[m]!=0){
+                countOfEvens++;
+
+            }
+        }
+        System.out.println(" զույգերի քանակը"+ countOfEvens);
+
     }
 }
