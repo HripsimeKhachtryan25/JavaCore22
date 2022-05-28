@@ -42,13 +42,15 @@ public class CharArrayExample {
 //char[] bobArray = {'b','a',b','o','l','a'};
 ////Տպում ենք true եթե տեքստը պարունակում է bob բառը, բայց o-ի տեղը կարող է լինել ցանկացած սինվոլ։
 ////օր․ abcbob → true, b9b -> true, բայց ասենք bac-> false
-        char[] bobArray = {'b', 'a', 'b', 'o', 'l', 'a'};
+        char[] bobArray = {'a', 'a', 'b', 'o', 'l', 'b'};
         boolean bobText = false;
-        for (int i = 0; i < bobArray.length; i++)
-            if (bobArray[i] == 'b' && bobArray[i + 2] == 'b')
+        for (int i = 0; i < bobArray.length-2; i++) {
+            if (bobArray[i] == 'b' && bobArray[i + 2] == 'b') {
                 bobText = true;
+                break;
+            }
+        }
         System.out.println(bobText);
-
 
 //5) Ունենք հետևյալ մասիվը՝
 //char[] text = {' ',' ','b','a','r','e','v',' ',' '};
