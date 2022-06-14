@@ -18,8 +18,10 @@ public class Stack {
 
     int pop() {
         if (index < 0) {
-            System.out.println("Stack is empty");
         }
         return array[index--];
+    }
+    public boolean isEmpty(){
+        return index ==  -1;
     }
 }

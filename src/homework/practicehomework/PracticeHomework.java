@@ -12,7 +12,7 @@ public class PracticeHomework {
     }
 
     int nextNumber(int number) {
-        return number + 1;
+        return ++number ;
     }
 
 

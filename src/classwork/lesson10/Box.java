@@ -7,6 +7,7 @@ public class Box {
 
     void volume() {
         System.out.println("volume:");
-        System.out.println(depth*height*width);
+        System.out.println(depth * height * width);
     }
+
 }
